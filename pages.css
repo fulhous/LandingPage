@@ -1,48 +1,80 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    vertical-align: middle;
 }
 a {
     text-decoration: none; 
     font-size: 18px;
     color: #E5E7Eb;
 }
-    
+ul {
+    list-style-type: none;
+}
+li {
+    text-align: end;
+}
+
 #headerlogo {
+    width: 500px;
     font-size: 24px;
     color:#f9faf8;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-ul {
-    list-style-type: none;
-}
+
 .header {
 display: flex;
-justify-content:center;
-align-items: center;
-gap: 20%;
+flex-direction: column;
+justify-content: center;
 background-color: #1f2937;
 padding-left:20%;
 padding-right: 20%;
+
 }
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+.downheader {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    padding: 100px 0;
+}
+
 .link {
     display: flex; 
     gap: 20px;  
+    width: 500px;
+    padding: 0;
+    justify-content: flex-end;
 }
-
 .info {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
 }
-#title {
+.title {
     font-size: 48px;
     font-weight: bold;
     color: #f9faf8;
 }
+.downheader .imgone {
+    width: 500px;
+    height: 300px;
+    }
+
 .RInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 5% 20%;
 }
 #titleRInfo {
     font-size: 36px;
@@ -52,7 +84,7 @@ padding-right: 20%;
 .container {
     display: flex;
     justify-content: center;
-    gap: 52px;
+    gap: 10%;
 }
 .point {
     width: 138px;
@@ -62,15 +94,48 @@ padding-right: 20%;
     border-radius: 30px;
     border: 5px solid #3882f6;
 }
-.imgone {
-width: 300px;
-height: auto;
-}
-#signuptop {
+#signuptop,#signupbot {
     border-radius: 5px;
     border-color: transparent;
     background-color: #3882f6;
     color: white;
     width: 100px;
     height: 25px;
+}
+.quote {
+    background-color: #E5E7Eb;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    font-style:italic;
+    padding: 5% 20%;
+}
+#autors {
+    text-align: end;
+}
+.signupbot {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Times New Roman', Times, serif;
+    color: #E5E7Eb;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 4% 20%;
+}
+
+.Text1{
+    font-weight: bold;
+}
+#signupbot {
+border-color:white;
+}
+.footer{
+height: 72px;
+background: #1f2937;
+color: #E5E7Eb;
+display: flex;
+justify-content: center;
+align-items: center;
 }
